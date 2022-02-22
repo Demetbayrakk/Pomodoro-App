@@ -1,7 +1,3 @@
-/*font-family: 'Caveat', cursive;
-font-family: 'Roboto', sans-serif;
-*/
-
 body{
     background-color: #272343;
     font-family:'Roboto', sans-serif; ;
@@ -23,6 +19,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+}
+#minutes , #seconds{
+    font-size: 4rem;
 }
 .fa-play, .fa-arrow-rotate-right{
     color:#e3f6f5;
@@ -33,7 +34,7 @@ body{
 .fa-play:hover, .fa-arrow-rotate-right:hover{
     color:#bae8e8;
     border:2px solid #bae8e8;
-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 .show-message{
     display: block;
@@ -42,4 +43,35 @@ transition: 0.3s ease;
     background-color: #e3f6f5;
     border-radius: 0.5rem;
     transition:0.5s ease;
+}
+
+/* pomodoro and timer  */
+
+.border{
+    border:2px dotted #bae8e8;
+}
+
+.selectTimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    
+}
+.selectPomodoro, .selectBreak{
+    text-decoration: none;
+    font-weight: bold;
+    color: #bae8e8;
+    background-color: #272343;
+    padding: 10px;
+    border:1px solid #bae8e8;
+    border-radius: 20px;
+    margin: 10px;    
+}
+.selectPomodoro:hover,.selectBreak:hover{
+    background-color: #bae8e8;
+    color:#272343
+}
+a{
+    color:white;
 }
